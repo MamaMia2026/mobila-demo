@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Mobilier – 2 machete demo</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #F3F2F7;
+      color: #111014;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 64px 20px 48px;
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #6C4BFF;
+      margin: 0 0 14px;
+    }
+    h1 {
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.1;
+      letter-spacing: -.02em;
+      margin: 0 0 12px;
+    }
+    .lead {
+      font-size: 17px;
+      line-height: 1.55;
+      color: #4B4858;
+      margin: 0 0 40px;
+      max-width: 560px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 28px;
+      background: #fff;
+      border: 1px solid rgba(17,16,20,.06);
+      border-radius: 20px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 1px 2px rgba(17,16,20,.04), 0 8px 24px rgba(17,16,20,.05);
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .card:hover, .card:focus-visible {
+      transform: translateY(-3px);
+      border-color: rgba(108,75,255,.35);
+      box-shadow: 0 2px 4px rgba(17,16,20,.04), 0 16px 40px rgba(108,75,255,.14);
+      outline: none;
+    }
+    .card .tag {
+      display: inline-flex;
+      align-items: center;
+      align-self: flex-start;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(108,75,255,.1);
+      color: #6C4BFF;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .card h2 {
+      font-size: 24px;
+      letter-spacing: -.01em;
+      margin: 6px 0 0;
+    }
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #4B4858;
+      flex: 1;
+    }
+    .card .cta {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #6C4BFF;
+      font-size: 15px;
+    }
+    footer {
+      padding: 24px 20px 32px;
+      text-align: center;
+      font-size: 14px;
+      color: #6B6878;
+      line-height: 1.6;
+    }
+    footer a {
+      color: #6C4BFF;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 480px) {
+      main { padding: 44px 16px 32px; }
+      .card { padding: 22px; }
+      footer { padding: 20px 16px 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="eyebrow">Demo</span>
+    <h1>Mobilier – 2 machete demo</h1>
+    <p class="lead">Două direcții pentru un magazin de mobilier: un site de prezentare și o aplicație web cu coș, favorite și comenzi.</p>
+
+    <div class="grid">
+      <a class="card" href="mobila-nook.html">
+        <span class="tag">Machetă 1</span>
+        <h2>NOOK – site de prezentare</h2>
+        <p>Pagină de prezentare cu catalog, pagini de produs, configurare dimensiuni și tapițerie, coș și comandă.</p>
+        <span class="cta">Deschide macheta →</span>
+      </a>
+      <a class="card" href="mobila-forma-app.html">
+        <span class="tag">Machetă 2</span>
+        <h2>FORMA – aplicație web</h2>
+        <p>Aplicație de tip magazin: filtre pe categorii, căutare, favorite, coș și istoric de comenzi.</p>
+        <span class="cta">Deschide aplicația →</span>
+      </a>
+    </div>
+  </main>
+  <footer>
+    Machetă demo · Site realizat de CristianWeb · <a href="https://cristianweb.ro" target="_blank" rel="noopener">Vreau un site ca acesta →</a>
+  </footer>
+</body>
+</html>
